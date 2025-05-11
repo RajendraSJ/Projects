@@ -14,13 +14,15 @@ if st.button("Generate Band Names"):
         random_city = random.choice(city_list)
         random_animal = random.choice(animal_list)
 
+        band_name_0 = f"{user_city} {user_animal}"
         band_name_1 = f"{user_city} {random_animal}"
         band_name_2 = f"{random_city} {user_animal}"
         band_name_3 = f"{random_city} {random_animal}"
 
         st.subheader("🎤 Your Band Name Ideas:")
-        st.write(f"1. {band_name_1}")
-        st.write(f"2. {band_name_2}")
-        st.write(f"3. {band_name_3}")
+        st.write(f"1. {band_name_0}")
+        st.write(f"2. {band_name_1}")
+        st.write(f"3. {band_name_2}")
+        st.write(f"4. {band_name_3}")
     else:
         st.warning("Please enter both your city and favorite animal.")
